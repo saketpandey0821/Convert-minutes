@@ -1,0 +1,17 @@
+import java.util.*;
+public class Convert_minutes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+double minutesInYear =60*24*365;
+Scanner sc=new Scanner (System.in);
+System.out.println("input the numbers of minutes");
+double min = sc.nextDouble();
+long years = (long) (min / minutesInYear);
+int days = (int) (min / 60 / 24) %365;
+System.out.println(" minute is approximately " + years + " years and " + days + " days");
+
+
+	}
+
+}
